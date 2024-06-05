@@ -25,3 +25,113 @@ body{
     background-position-x: bottom;
     background-color: var(--primary-color);
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    width: 450px;
+    height: 700px;
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+.card .card-hero{
+    width: 100%;
+    height: 217px;
+    border-radius: 23px 23px 0 0;
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 55px;
+}
+.card .card-infos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 23px 23px;
+}
+.card .card-infos .textos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.card .card-infos .textos h2{
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+.card .card-infos .textos p{
+    text-align: center;
+    font-size: 16.3px;
+    color: var(--desaturated-blue);
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin-bottom: 55px;
+}
+.card .card-infos .plan{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+}
+.card .card-infos .plan .left{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+.card .card-infos .plan .plan-infos .type-plan{
+    font-weight: 900;
+}
+.card .card-infos .plan .plan-infos .price-plan{
+    color: var(--desaturated-blue);
+    font-weight: 600;
+}
+.card .card-infos .plan .right{
+    font-size: .9rem;
+    color: var(--secondary-color);
+    font-weight: 700;   
+}
+.card .card-infos .plan .right a{
+   text-decoration: underline;
+}
+.card .card-infos .plan .right a:hover{
+   text-decoration: none;
+   color: #6a49ff;
+}
+.card .card-infos .card-action{
+    width: 100%;
+    padding: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0 0 23px 23px;
+}
+.card .card-infos .card-action .btn-payment{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 10px;
+    padding: .8rem;
+    width: 95%;
+    text-align: center;
+    transition: all .3s;
+    box-shadow: 0px 10px 25px #af9efd;    
+}
+.card .card-infos .card-action .btn-payment:hover{
+    background: #6a49ff;
+}
+.card .card-infos .card-action .btn-cancel{
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
