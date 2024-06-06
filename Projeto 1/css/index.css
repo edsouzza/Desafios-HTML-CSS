@@ -77,11 +77,13 @@ main{
     margin-bottom: 55px;
 }
 .card .card-infos .plan{
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .7rem;
+    background-color: #F8F9FE;
+    border-radius: 10px;
 }
 .card .card-infos .plan .left{
     width: 50%;
@@ -134,4 +136,70 @@ main{
 .card .card-infos .card-action .btn-cancel{
     color: var(--desaturated-blue);
     font-weight: 700;
+}
+@media screen and (max-width:375px) {
+    body{
+        background-image: url(/images/pattern-background-mobile.svg); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: bottom;
+        background-color: var(--primary-color);
+    }
+    main{
+      padding: 1.4rem;     
+    }
+    .card{
+        width: 375px;
+        height: 567px;        
+    }
+    .card .card-hero{
+      height: 162px;          
+    }
+    .card .card-infos .textos{
+        width: 80%;
+        height: 90px;
+        padding: 0;
+        margin-top: 17px;
+    }
+    .card .card-infos .textos h2{
+        font-size: 1.3rem;
+    }
+    .card .card-infos .textos p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .card .card-infos .plan{
+      background-color: #F8F9FE;
+      width: 85%; 
+      padding: 1rem .7rem;
+      border-radius: 10px;
+      margin-top: 15px;
+
+      & .img-music{
+        width: 45px;
+        height: 45px;
+      }
+      & .type-plan{
+        font-weight: 900;
+        font-size: 13px;
+      }
+      & .price-plan{
+        font-size: 14px;
+      }
+      & .right a{
+        font-size: 12px;
+        font-weight: 900;
+      }
+    }
+    .card .card-infos .card-action .btn-payment{
+        font-size: 14px; 
+        font-weight: 900;
+        margin-top: -10px;
+        width: 110%; 
+    }
+    .card .card-infos .card-action .btn-cancel{
+        font-size: 14px; 
+        font-weight: 900;
+    }
+
 }
