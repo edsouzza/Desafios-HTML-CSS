@@ -1,6 +1,7 @@
-let input      = document.querySelector('#campoCPF');
-let link       = document.querySelector('.link');
-let items      = document.querySelectorAll('.item');
+let input      = document.querySelector('#campoCPF')
+let link       = document.querySelector('.link')
+let items      = document.querySelectorAll('.item')
+let acordeon   = document.querySelectorAll('.acordeon__item')
 
 //Mudando a cor do placeholder qdo o campor receber o foco
 input.addEventListener('focus', function (){
@@ -30,15 +31,19 @@ items.forEach(item => {
 });
 
 //Controlando a abertura e fechamento do acordeon
-document.querySelectorAll('.acordeon__item').forEach(item => {
-    let seta = item.querySelector('.acordeon__seta'); // Seleciona a seta dentro do item
-
-    seta.addEventListener('click', () => {
+acordeon.forEach(item => {
+    item.addEventListener('click', (event) => {
         let descricao = item.nextElementSibling; // Seleciona a descrição correspondente
+        let seta = item.querySelector('.acordeon__seta'); // Seleciona a seta
 
         if (descricao && descricao.classList.contains('acordeon__descricao')) {
-            descricao.classList.toggle('hidden'); // Mostra/oculta a descrição
-            seta.classList.toggle('girar'); // Gira a seta
+            descricao.classList.toggle('hidden'); // Alterna a visibilidade da descrição
+        }
+
+        if (event.target.classList.contains('acordeon__seta') || event.target.classList.contains('acordeon__title')) {
+            seta.classList.toggle('girar'); // Gira a seta apenas se clicar no título ou na seta
         }
     });
 });
+
+
