@@ -7,10 +7,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: var(--white); */
-    background-color: #ffcffa;
+    background-color: var(--white);
 
 }
+
 .btn-form {
     width: 75%;
     padding: 1rem;
@@ -73,6 +73,20 @@
    line-height: 30px;
    margin-top: 10px;
 }
+
+.tipo-limite-subtitle{
+   color :  #383838;   
+   font-weight: 500;   
+   line-height: 30px;
+   margin-top: 10px;
+   margin-left: 1rem;
+}
+
+.style-link{
+    color: var(--gray);
+    text-decoration: underline;
+}
+
 /* Gerais */
 
 /* Primeira dobra Cartões de crédito com benefícios exclusivos. Com PicPay, a experiência é outra */
@@ -364,7 +378,7 @@
     margin-left: .6rem;
 }
 
-.descricao-tipo-limite, .card-subtitle{
+.descricao-tipo-limite{
     margin-left: 1rem;
     font-size: 1.1rem;
 }
@@ -425,7 +439,7 @@
 }
 
 .img-left img{
-    width: 650px;
+    width: 600px;
     border-radius: 5px;
 }
 
@@ -434,7 +448,7 @@
 }
 
 .img-right img{
-    width: 650px;
+    width: 600px;
     border-radius: 5px;
 }
 /* Quinta dobra beneficios */
@@ -442,7 +456,7 @@
 /* Sexta dobra vantagens */
 .content__vantagens{
     width: 100%;
-    height: 700px;    
+    height: auto; 
     padding: 6rem 0;
     display: flex;
     justify-content: center;
@@ -476,33 +490,77 @@
     text-decoration: underline;
     font-weight: bold;
 }
+
 /* Sexta dobra vantagens */
 
 /* Setima dobra Dúvidas Frequentes */
-.duvidas__acordeon{
+.content__duvidas{
     width: 100%;
-    height: 300px;
-    background-color: red;
+    padding: 0 2.8rem;
+    margin-bottom: 4rem;
 }
 
-.acordeon__title{
-    font-size: 1.3rem;
+.main__duvidas{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+.duvidas__acordeon{
+    width: 100%;   
+    padding: 3rem 0;
+}
+
+.acordeon__item{
+    display: flex;
+    font-size: 1.3rem;
+    cursor: pointer;
     justify-content: space-between;
 }
 
-.acordeon__title h2{
+.acordeon__item h2{
     font-size: 1.3rem;
 }
 
-.acordeon__title .icon{
-    margin-top: -10px;
-    cursor: pointer;
-}
+.acordeon__descricao{
+    color :  #383838;   
+    font-weight: 500;   
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 1rem;
+    font-size: 1rem;
+ }
 
-/* .main__duvidas h2{
-   font-size: 2.5rem;
-   align-items: center;
-} */
+ .acordeon__descricao.hidden{
+    display: none;  
+ }
+
+ .acordeon__seta{
+    transition: transform 0.5s ease-in-out;
+    margin-top: 10px;
+ }
+
+ .acordeon__seta.girar{
+    transform: rotate(180deg);
+ }
+
+ .linha{
+    margin-top: .5rem;
+ }
+
+ .acordeon__title{
+    margin-top: 1rem;
+ }
+
+ .frase-negrito{
+    font-size: 1.1rem;
+    font-style: bold;
+    font-weight: 500;
+ }
 
 /* Setima dobra Dúvidas Frequentes */

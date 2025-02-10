@@ -1,6 +1,6 @@
-let input = document.querySelector('#campoCPF');
-let link    = document.querySelector('.link');
-let items   = document.querySelectorAll('.item');
+let input      = document.querySelector('#campoCPF');
+let link       = document.querySelector('.link');
+let items      = document.querySelectorAll('.item');
 
 //Mudando a cor do placeholder qdo o campor receber o foco
 input.addEventListener('focus', function (){
@@ -25,6 +25,20 @@ items.forEach(item => {
         let link = item.querySelector('.link'); // Pega SOMENTE o link dentro do item
         if (link) {
             link.style.color = "#000"; // Retorna ao estilo original
+        }
+    });
+});
+
+//Controlando a abertura e fechamento do acordeon
+document.querySelectorAll('.acordeon__item').forEach(item => {
+    let seta = item.querySelector('.acordeon__seta'); // Seleciona a seta dentro do item
+
+    seta.addEventListener('click', () => {
+        let descricao = item.nextElementSibling; // Seleciona a descrição correspondente
+
+        if (descricao && descricao.classList.contains('acordeon__descricao')) {
+            descricao.classList.toggle('hidden'); // Mostra/oculta a descrição
+            seta.classList.toggle('girar'); // Gira a seta
         }
     });
 });
