@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 i{
+    /* seta */
     position: absolute;
-    top: 2rem;
+    top: 1.6rem;
+    font-style: bold;    
 }
 
 a{
@@ -17,6 +19,12 @@ a{
     text-decoration: underline;
 }
 
+.sublinhado:hover{
+   background-color:#358f6716;
+   border-radius: 7px;
+   padding: .6rem 1.2rem;
+}
+
 .buttonHead{
     width: 150px; 
     height: 45px;
@@ -24,7 +32,6 @@ a{
 }
 
 .buttonHead:hover{
-    background-color: #358f6716;
-    
+    background-color: #358f6716;    
     color: #136C4C;
 }
