@@ -1,0 +1,30 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i{
+    position: absolute;
+    top: 2rem;
+}
+
+a{
+    color: black;
+    font-weight: 900; 
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.buttonHead{
+    width: 150px; 
+    height: 45px;
+    border: 2px solid #136C4C;
+}
+
+.buttonHead:hover{
+    background-color: #358f6716;
+    
+    color: #136C4C;
+}

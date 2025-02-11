@@ -1,9 +1,9 @@
-@media(max-width:1024px){
-    .nav-list, .area-right{ 
-        display: none;
-    }
-    .menu-mobile{
+@media(max-width:1386px){    
+    .menu-mobile, .area-right{
         display: block;
+    }
+    .menu-burger{
+        display: none;
     }
 }
     
