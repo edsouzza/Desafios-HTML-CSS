@@ -574,6 +574,11 @@ footer{
     grid-template-rows: repeat(3,1fr);
 }
 
+.footer-icons{
+    display: flex;
+    gap: 1rem;
+}
+
 .footer-links{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -621,7 +626,7 @@ i{
    color: var(--redes-sociais);
    font-size: 1.5rem; 
    margin-left: 1rem;
-   cursor: pointer;
+   cursor: pointer;   
 }
 
 .img-app{

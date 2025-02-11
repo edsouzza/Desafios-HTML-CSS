@@ -21,10 +21,6 @@ header{
     display: block;
 }
 
-#btn-mobile{
-    display: none;
-}
-
 .nav-list{
     width: 60%;
     display: flex;
@@ -111,4 +107,12 @@ header{
     }
 }
 
+.bi-list{
+    font-size: 2rem;
+}
+
+.bi-x-lg{
+    font-size: 1.7rem;
+    display: none;
+}
 /*HEADER*/

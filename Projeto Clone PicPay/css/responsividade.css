@@ -1,0 +1,9 @@
+@media(max-width:1024px){
+    .nav-list, .area-right{ 
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+}
+    
