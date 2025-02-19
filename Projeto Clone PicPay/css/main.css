@@ -86,29 +86,47 @@
     text-decoration: underline;
 }
 
+.flex{
+    display: flex;
+    background-color: rgb(196, 209, 16);
+}
+
+.interface{
+    width: 100%;
+    background-color: red;
+}
+
 /* Gerais */
 
 /* Primeira dobra Cartões de crédito com benefícios exclusivos. Com PicPay, a experiência é outra */
-.content__hero {
+
+.content_topo{
+    /* background-color: var(--white);    */
+    padding: 40px 4%; 
+}
+
+.content_topo .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.img__hero{
+    width: 930px;
+    height: 50%x;
+}
+
+
+
+/* .content_topo .hero {
+    background-color: #3232a1;
     width: 100%;
-    min-height: 82vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.content__hero .hero {
-    background-color: var(--white);
-    width: 100%;
-    min-height: 120vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.content__hero .hero .hero__textos {
+.content_topo .hero__textos {
     width: 50%;
-    min-height: 50vh;
     padding: 8.8rem 3rem;
     background-color: var(--verde-principal);
     display: flex;
@@ -174,19 +192,7 @@
     }
 }
 
-.content__hero .hero .hero__image {
-    width: 50%;
-    min-height: 142.5vh;
-    padding: 0;
-    background-image: url('../images/image_hero.webp');
-    background: cover;
-    /* Cobre toda a div */
-    background-position: center;
-    /* Centraliza a imagem */
-    background-repeat: no-repeat;
-    /* Evita repetições */
-    background-size: 115%;
-}
+
 /* Primeira dobra */
 
 /* Segunda dobra Para cada estilo de vida, um tipo de cartão personalizado */
