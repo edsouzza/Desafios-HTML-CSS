@@ -75,8 +75,6 @@ main{
 .interface{
     width: 1360px;
     height: auto;    
-    margin-bottom: 1250px; 
-    /* background-color: red; */
 }
 
 .fluid{
@@ -546,8 +544,7 @@ form{
 /* Setima dobra Dúvidas Frequentes */
 .content__duvidas{
     width: 100%;
-    padding: 0 2.8rem;
-    margin-bottom: 4rem;
+    padding: 0 2.8rem;  
 }
 
 .main__duvidas{
