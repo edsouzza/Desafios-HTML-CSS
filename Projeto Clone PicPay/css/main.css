@@ -60,16 +60,30 @@
     text-decoration: underline;
 }
 
+.title{
+    align-items: left;
+    font-size: 2.5rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
 .interface{
     width: 1360px;
-    height: 1000px;    
+    height: auto;    
+    margin-bottom: 1250px; 
     /* background-color: red; */
 }
 
+.fluid{
+   width: 100%;
+}
+
 /* Gerais */
-
-/* Primeira dobra Cartões de crédito com benefícios exclusivos. Com PicPay, a experiência é outra */
-
 
 /* Hero formulario de cadastro e imagem */
 .hero{
@@ -170,24 +184,13 @@ form{
 }
 /* Hero formulario de cadastro e imagem */
 
-/* Primeira dobra */
-
 /* Segunda dobra Para cada estilo de vida, um cartão personalizado */
 .content__cards{
     width: 100%;
-    /* height: auto;     */
     height: 1050px;    
     padding: 2.8rem; 
     display: flex;
-    /* align-items: left; */
-    flex-direction: column;
-    /* justify-content: center; */
-    /* background-color: red; */
-}
-
-.content__cards .title{
-    align-items: left;
-    font-size: 2.5rem;
+    flex-direction: column;    
 }
 
 .content__cards .area-cards{
@@ -199,7 +202,6 @@ form{
     padding: .8rem 0;
     flex-wrap: wrap;
     gap: .8rem;
-    /* background-color: rgb(53, 179, 233); */
 }
 
 .content__cards .area-cards .card1 {
@@ -336,13 +338,12 @@ form{
 .bi-arrow-right-short{
     color: #FFF;
 }
-
 /* Segunda dobra */
 
 /* Terceira dobra PicPay Card: um cartão de crédito que todo mundo pode ter */
 .content__cards_info{
    width: 100%;
-   height: 650px;
+   min-height: 750px;
    padding: 2.8rem; 
    margin-bottom: 3rem;
 }
@@ -399,8 +400,8 @@ form{
 /* Quarta dobra tipos de limite */
 .content__tipos_limite{
     width: 100%;
-    height: 1020px;
-    padding: 2.8rem; 
+    min-height: 380px;
+    padding: 0 2.8rem; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,29 +487,19 @@ form{
 .content__images{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;   
-    gap: 1rem; 
+    gap: .5rem;
+    justify-content: center;
 }
 
-.img-left{
-    width: 50%;    
+.img-left img, .img-right img{
+    border-radius: 10px;
 }
 
-.img-left img{
-    width: 615px;
-    border-radius: 5px;
+.title-beneficios{
+   margin-left: -1.8rem; 
+   margin-bottom: -1.3rem;
 }
 
-.img-right{
-    width: 50%;
-}
-
-.img-right img{
-    width: 615px;
-    border-radius: 5px;
-}
 /* Quinta dobra beneficios */
 
 /* Sexta dobra vantagens */
@@ -527,7 +518,7 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 3rem;
+    
 }
 
 .content__vantagens .right{
@@ -541,6 +532,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 7.4rem;
 }
 
 .card-subtitle a{
@@ -558,30 +550,17 @@ form{
     margin-bottom: 4rem;
 }
 
-
-
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;   
-}
-
-
 .main__duvidas{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 3rem 0;
-
-    h2{
-        font-size: 2.5rem;
-    }
+    justify-content: flex-start;
+    margin-left: -2.5rem;
 }
 
 .duvidas__acordeon{
-    width: 100%;   
+    width: 108%;   
     padding: 3rem 0;
+    margin-left: -2.5rem;
 }
 
 .acordeon__item{

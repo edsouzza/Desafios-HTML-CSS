@@ -40,6 +40,8 @@ footer .footer-links p{
 }
 
 .footer-redes-icons{
+    display: flex;
+    gap: 1rem;
     margin-left: 3rem;
 }
 
