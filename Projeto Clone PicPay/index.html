@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-geral.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsividade.css">
 
     <!-- icones -->
@@ -104,16 +105,15 @@
                 <a href="#" class="linkAreaCliente">Área do Cliente</a>
             </div>
             <button class="botaoHeader">
-                Pedir Cartão
+                Pedir cartão
             </button>
         </div>
     </header>
+
     <main>
-        <section class="content__topo">
-            <div class="interface">
-                <div class="flex">
-                    <div class="hero__textos">
-                        <h1>Cartões de crédito com<br>benefícios exclusivos.<br>Com PicPay, a <br>experiência é outra</h1>
+        <section class="hero">            
+                <div class="textos">
+                    <h1 class="title-hero">Cartões de crédito com<br>benefícios exclusivos.<br>Com PicPay, a <br>experiência é outra</h1>
                         <div class="area-form">
                             <h2>Abra sua conta PicPay</h2>
                             <form>
@@ -121,402 +121,420 @@
                                 <button class="btn-form">Pedir cartão de crédito</button>
                             </form>
                         </div>
-                    </div>
-                    <div class="areaHero__image"><img class="img__hero" src="../images/image_hero.webp" alt="img__hero" ></div>
                 </div>
-            </div>
+                <div class="image-hero"></div>
         </section>
 
-        <section class="content__cards">
-            <h2 class="title">Para cada estilo de vida, um tipo de cartão personalizado</h2>
-            <div class="cards">
-                <div class="card1"></div>
-                <div class="card2"></div>
-                <div class="card3"></div>
+        <div class="interface">
+            <section class="content__cards">
+                <h2 class="title">Para cada estilo de vida, um cartão personalizado</h2>
+                <div class="area-cards">
+                    <div class="card1">
+                        <div class="are__btn__card">
+                            <button class="btn-card-form">Pedir cartão de crédito</button>
+                            <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
 
-                <div class="content__cards_area_button">
-                    <button class="btn-card-form">Pedir cartão de crédito</button>
-                </div>
-            </div>            
-        </section>
+                    <div class="card2">
+                        <div class="are__btn__card">
+                            <button class="btn-card-form">Pedir cartão de crédito</button>
+                            <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
 
-        <section class="content__cards_info">            
-            <div class="content__cards__textos">
-                <h2>PicPay Card: um cartão de crédito que<br> todo mundo pode ter</h2>
-                <h3 class="subtitle">Sem burocracia e zero anuidade, o PicPay Card te deixa no controle do seu dinheiro.</h3>
-            </div>   
+                    <div class="card3">
+                        <div class="are__btn__card">
+                            <button class="btn-card-form">Pedir cartão de crédito</button>
+                            <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+<!-- 
+            <section class="content__cards_info">            
+                <div class="content__cards__textos">
+                    <h2>PicPay Card: um cartão de crédito que<br> todo mundo pode ter</h2>
+                    <h3 class="subtitle">Sem burocracia e zero anuidade, o PicPay Card te deixa no controle do seu dinheiro.</h3>
+                </div>   
 
-            <div class="area__cards__info">
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo1.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Cartão de crédito zero anuidade*.</h3>
-                    </div>
-                </div> 
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo2.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Compre com cartão virtual em lojas online e apps.</h3>
-                    </div>
-                </div> 
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo3.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Cadastre seu cartão nas carteiras digitais e pague pelo celular.</h3>
-                    </div>
-                </div> 
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo4.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Aproveite as vantagens da bandeira Mastercard.</h3>
-                    </div>
-                </div> 
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo5.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Acompanhe todas as movimentações no app PicPay.</h3>
-                    </div>
-                </div> 
-                <div class="card__info">
-                    <div class="area-img">
-                        <img class="icone" src="./images/simbolos-terceira-dobra/simbolo6.webp" alt="simbolo1">
-                    </div>
-                    <div class="area-texto">
-                        <h3 class="card__info__texto">Cartão adicional grátis para crianças a partir de 10 anos.</h3>
-                    </div>
-                </div> 
-            </div>   
-            
-            <div class="content__card__info_area_button">
-                <button class="btn-card-form-sem-bg">Pedir cartão de crédito</button>
-            </div>
-        </section>
-
-        <section class="content__tipos_limite">
-            <div class="left">
-                <h2 class="card_title">Conheça todos os tipos de limite que você pode ter com o PicPay Card</h2>
-                <h3 class="card-subtitle">Do Cofrinho do Cartão pra você construir seu histórico de crédito<br> com a gente até Limite Aprovado pra você aumentar seu poder de compra.</h3>
+                <div class="area__cards__info">
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo1.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Cartão de crédito zero anuidade*.</h3>
+                        </div>
+                    </div> 
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo2.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Compre com cartão virtual em lojas online e apps.</h3>
+                        </div>
+                    </div> 
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo3.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Cadastre seu cartão nas carteiras digitais e pague pelo celular.</h3>
+                        </div>
+                    </div> 
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo4.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Aproveite as vantagens da bandeira Mastercard.</h3>
+                        </div>
+                    </div> 
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo5.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Acompanhe todas as movimentações no app PicPay.</h3>
+                        </div>
+                    </div> 
+                    <div class="card__info">
+                        <div class="area-img">
+                            <img class="icone" src="./images/simbolos-terceira-dobra/simbolo6.webp" alt="simbolo1">
+                        </div>
+                        <div class="area-texto">
+                            <h3 class="card__info__texto">Cartão adicional grátis para crianças a partir de 10 anos.</h3>
+                        </div>
+                    </div> 
+                </div>   
                 
-                <div class="area-button">
-                    <button class="btn-card-form-sem-bg btn-area-button">Pedir cartão de crédito</button>
+                <div class="content__card__info_area_button">
+                    <button class="btn-card-form-sem-bg">Pedir cartão de crédito</button>
                 </div>
+            </section>
+
+            <section class="content__tipos_limite">
+                <div class="left">
+                    <h2 class="card_title">Conheça todos os tipos de limite que você pode ter com o PicPay Card</h2>
+                    <h3 class="card-subtitle">Do Cofrinho do Cartão pra você construir seu histórico de crédito<br> com a gente até Limite Aprovado pra você aumentar seu poder de compra.</h3>
+                    
+                    <div class="area-button">
+                        <button class="btn-card-form-sem-bg btn-area-button">Pedir cartão de crédito</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cards-tipo-limite">
+                        <img src="./images/simbolos-quarta-dobra/simbolo1.png" alt="simbolo-cards">
+                        <div class="title-com-span">
+                            <span class="borda-span">|</span>
+                            <h2 class="title-tipo-limite">Limite pré-aprovado</h2>
+                        </div>
+                        <p class="tipo-limite-subtitle">Seu histórico bancário e seu relacionamento com o PicPay podem liberar um limite pré-aprovado de crédito. </p>
+                    </div>
+                    <div class="cards-tipo-limite">
+                        <img src="./images/simbolos-quarta-dobra/simbolo2.png" alt="simbolo-cards">
+                        <div class="title-com-span">
+                            <span class="borda-span">|</span>
+                            <h2 class="title-tipo-limite">Cofrinho do Cartão</h2>
+                        </div>
+                        <p class="tipo-limite-subtitle">Um limite que vai crescendo junto com você. Caso você ainda não tenha um limite pré-aprovado, você pode utilizar o Cofrinho do Cartão, onde todo o valor guardado vira limite pra você usar no crédito. Além disso, esse valor guardado fica rendendo 102% do CDI todo dia útil e você tem mais chances de conquistar outros tipos de limite.</p>
+                    </div>
+                    <div class="cards-tipo-limite">
+                        <img src="./images/simbolos-quarta-dobra/simbolo3.png" alt="simbolo-cards">
+                        <div class="title-com-span">
+                            <span class="borda-span">|</span>
+                            <h2 class="title-tipo-limite">Cofrinho do Cartão</h2>
+                        </div>
+                        <p class="tipo-limite-subtitle">Multiplique seu limite a cada depósito. Além do Cofrinho do Cartão, você tem a possibilidade de aumentar ainda mais o seu limite, ganhando um Limite Extra. Ele varia de acordo com o valor que você tem guardado no Cofrinho do Cartão e também com o seu histórico de crédito com o PicPay. Esse Limite Extra pode ser de 50, 100 e até 250% em cima do valor que você tem guardado.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content__beneficios">
+                <div class="content__titles">
+                    <div class="area__beneficios__title">
+                        <h2 class="title">Benefícios Mastercard® Surpreenda</h2>
+                    </div>                
+                </div>
+                <div class="content__images">
+                    <div class="img-left">
+                        <img src="./images/imgs-quinta-dobra/img_beneficios1.jpg" alt="simbolo-cards">
+                    </div>
+                    <div class="img-right">
+                        <img src="./images/imgs-quinta-dobra/img_beneficios2.jpg" alt="simbolo-cards">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="content__vantagens">
+                <div class="left">
+                    <h2 class="card_title">Ainda mais vantagens com a conta digital PicPay</h2>
+                    <h3 class="card-subtitle">O PicPay Card é débito e crédito e você controla todas as suas contas e compras pelo app PicPay. Você não se preocupa com a anuidade e ainda tem todas as <a href="#">funcionalidades da conta digital</a> na sua mão.</h3>               
+                </div>
+                <div class="right">
+                    <div class="card-vantagem">
+                        <img src="./images/imgs-sexta-dobra/img_arvore_de_cartoes.webp" alt="simbolo-cards">
+                    </div>                
+                </div>
+            </section>
+
+            <section class="content__duvidas">
+            <div class="main__duvidas">
+                <h2>Dúvidas frequentes</h2>
             </div>
-            <div class="right">
-                <div class="cards-tipo-limite">
-                    <img src="./images/simbolos-quarta-dobra/simbolo1.png" alt="simbolo-cards">
-                    <div class="title-com-span">
-                        <span class="borda-span">|</span>
-                        <h2 class="title-tipo-limite">Limite pré-aprovado</h2>
-                    </div>
-                    <p class="tipo-limite-subtitle">Seu histórico bancário e seu relacionamento com o PicPay podem liberar um limite pré-aprovado de crédito. </p>
-                </div>
-                <div class="cards-tipo-limite">
-                    <img src="./images/simbolos-quarta-dobra/simbolo2.png" alt="simbolo-cards">
-                    <div class="title-com-span">
-                        <span class="borda-span">|</span>
-                        <h2 class="title-tipo-limite">Cofrinho do Cartão</h2>
-                    </div>
-                    <p class="tipo-limite-subtitle">Um limite que vai crescendo junto com você. Caso você ainda não tenha um limite pré-aprovado, você pode utilizar o Cofrinho do Cartão, onde todo o valor guardado vira limite pra você usar no crédito. Além disso, esse valor guardado fica rendendo 102% do CDI todo dia útil e você tem mais chances de conquistar outros tipos de limite.</p>
-                </div>
-                <div class="cards-tipo-limite">
-                    <img src="./images/simbolos-quarta-dobra/simbolo3.png" alt="simbolo-cards">
-                    <div class="title-com-span">
-                        <span class="borda-span">|</span>
-                        <h2 class="title-tipo-limite">Cofrinho do Cartão</h2>
-                    </div>
-                    <p class="tipo-limite-subtitle">Multiplique seu limite a cada depósito. Além do Cofrinho do Cartão, você tem a possibilidade de aumentar ainda mais o seu limite, ganhando um Limite Extra. Ele varia de acordo com o valor que você tem guardado no Cofrinho do Cartão e também com o seu histórico de crédito com o PicPay. Esse Limite Extra pode ser de 50, 100 e até 250% em cima do valor que você tem guardado.</p>
-                </div>
+            
+            <div class="duvidas__acordeon">
+                    <div class="acordeon">
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">1. Com quantos anos posso solicitar o PicPay Card crédito?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Assim como para abertura da conta PicPay, a idade mínima necessária para obter o PicPay Card na função débito é de 16 anos. Para o PicPay Card na função crédito, é preciso ter no mínimo 18 anos e a solicitação estará sujeita à análise e aprovação de crédito.</h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">2. Como funciona o PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Todos os clientes que já <strong>possuem um PicPay Card crédito</strong> e aceitarem a nova oferta e os <strong>novos clientes</strong> que solicitarem o PicPay Card crédito agora vão ter a sua disposição o <strong>Cofrinho do Cartão</strong> - uma forma mais fácil de você ter <strong>limite no cartão de crédito</strong> e poder construir seu <strong>histórico de crédito</strong> com o PicPay, podendo ganhar <strong>Limite Extra</strong> e até mesmo um <strong>Limite Aprovado</strong>. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">3. Como funciona a composição dos meus limites no PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">No novo PicPay Card, você pode ter <strong>até três tipos de limite</strong> pra compor seu cartão de crédito, dependendo do seu nível e da saúde do seu crédito com o PicPay. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">4. Como funciona o Aumento de Limite Automático?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Esse limite está disponível para <strong>clientes em qualquer um dos níveis</strong>. O Aumento de Limite Automático funciona como um "limite emergencial" para o seu cartão de crédito. <strong>A gente explica:</strong> se você <strong>precisa de mais limite para fazer alguma compra</strong> e <strong>não tem o valor completo no Cofrinho do Cartão</strong>, pode utilizar o valor que você tem no <strong>Saldo da sua conta PicPay</strong> como limite. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">5. Qual a bandeira do cartão de crédito do PicPay?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">A bandeira do PicPay Card é Mastercard, aceita mundialmente por uma ampla rede de estabelecimentos credenciados</h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">6. O cartão PicPay é crédito ou débito?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">O PicPay Card é um cartão múltiplo, ou seja, ele pode ser crédito e débito. Caso você tenha crédito aprovado, o seu PicPay Card terá as duas funcionalidades.</h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">7. Como solicitar ou ativar meu PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Para <strong>solicitar ou ativar</strong> o novo PicPay Card você precisa <strong>depositar um valor mínimo no Cofrinho</strong>.<br><br>
+                                No momento da <strong>ativação</strong> do PicPay Card, é <strong>necessário transferir R$ 50,00 pro Cofrinho do Cartão</strong>. Ah e relembrando: <strong>todo</strong> o dinheiro guardado nesse cofrinho <strong>rende 102% do CDI</strong> todo dia útil.<br><br> 
+                                Assim que você colocar esse valor mínimo no Cofrinho, o<strong>cartão físico será gerado</strong> e enviado para seu endereço, com prazo de até 10 dias úteis para entrega. Enquanto isso, o <strong>cartão virtual fica disponível para uso imediato.</strong></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">8. Quais as vantagens do PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Usar o PicPay Card na função crédito tem muitas vantagens:<br><br>
+                                O <strong>valor</strong> guardado no <strong>Cofrinho do Cartão</strong> vira <strong>limite</strong> pra você usar no <strong>crédito</strong>;
+                                Seu dinheiro fica <strong>rendendo 102% do CDI</strong> todo dia útil;
+                                Você começa a criar e melhorar seu <strong>histórico de crédito</strong> com a gente e pode conquistar <strong>Limite Extra</strong> ou um <strong>Limite Aprovado;</strong>
+                                Com o cartão de crédito você pode <strong>parcelar</strong> suas compras e também <strong>usar em sites e aplicativos</strong>, como: Netflix, Uber, iFood e etc.</h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">9. Como faço para ter limite no PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">10. Quando vou ter um Limite Aprovado pelo PicPay?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Quanto <strong>mais você usar</strong> seu <strong>PicPay Card na função crédito</strong>, mais vai permitir que a gente <strong>te conheça melhor</strong> para oferecer um <strong>Limite Aprovado</strong>, à medida que construímos o nosso relacionamento.Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">11. Posso parcelar minhas compras no PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden"><strong>Claro!</strong> Você pode <strong>parcelar as compras - com ou sem juros</strong> - a critério do lojista.<br><br>
+                                Ao parcelar uma compra, o <strong>valor total</strong> (e não apenas o valor da parcela) fica <strong>reservado no Cofrinho do cartão</strong>, rendendo, e é liberado à medida que você vai <strong>pagando suas faturas</strong>.</h3>
+                            <hr class="linha">
+                        </div>
+                        <div class="item__acordeon">
+                            <div class="acordeon__item">
+                                <h2 class="acordeon__title">12. Como acompanhar a entrega do PicPay Card?</h2>
+                                <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </div>
+                            <h3 class="acordeon__descricao hidden">Você pode acompanhar a entrega do seu PicPay Card direto no aplicativo.<br><br>
+                                1. Abra o app PicPay<br><br> 
+                                2. Toque em "Carteira"<br><br>
+                                3. Depois toque em "Acompanhe o rastreio e desbloqueie o seu cartão."<br><br>
+                                Após essas etapas, você vai poder acompanhar as informações de entrega do seu cartão. Você também receberá um e-mail com todas as atualizações. Lembre-se que a entrega do cartão tem um prazo de até 10 dias úteis.</h3>
+                            <hr class="linha">
+                        </div>
+                    </div>                
             </div>
-        </section>
+            </section> -->
 
-        <section class="content__beneficios">
-            <div class="content__titles">
-                <div class="area__beneficios__title">
-                    <h2 class="title">Benefícios Mastercard® Surpreenda</h2>
-                </div>                
+        </div>      
+        
+    </main>
+
+    <footer>
+        <div class="footer-links interface">
+            
+            <div class="col1">
+                <h2>Pra você</h2>
+                <p>Conta digital</p>
+                <p>Conta para menores</p>
+                <p>Cartão de crédito</p>
+                <p>Pix</p>
+                <p>Assistente de Pagamentos</p>
+                <p>Rendimento</p>
+                <p>Antecipação FGTS</p>
+                <p>Empréstimo Consignado</p>
+                <p>Crédito com garantia de veículo</p>
+                <p>PicPay Invest</p>
+                <p>Seguro Carteira Digital</p>
+                <p>Seguro Celular</p>
+                <p>PicPay Shop</p>
+                <p>Multas e IPVA</p>
+                <p>Seguro de Vida</p>
             </div>
-            <div class="content__images">
-                <div class="img-left">
-                    <img src="./images/imgs-quinta-dobra/img_beneficios1.jpg" alt="simbolo-cards">
-                </div>
-                <div class="img-right">
-                    <img src="./images/imgs-quinta-dobra/img_beneficios2.jpg" alt="simbolo-cards">
-                </div>
+            <div class="col2">
+                <h2>Para seu Negócio</h2>
+                <p>PicPay Negócios</p>
+                <p>Venda online</p>
+                <p>Soluções para E-commerce</p>
+                <p>Maquininhas Parceiras</p>
+                <p>Promoções PicPay</p>
+                <p>PicPay Ads</p>
+                <p>PicPay Benefícios</p>
+                <p>Antecipação de recebíveis</p>
             </div>
-
-        </section>
-
-        <section class="content__vantagens">
-            <div class="left">
-                <h2 class="card_title">Ainda mais vantagens com a conta digital PicPay</h2>
-                <h3 class="card-subtitle">O PicPay Card é débito e crédito e você controla todas as suas contas e compras pelo app PicPay. Você não se preocupa com a anuidade e ainda tem todas as <a href="#">funcionalidades da conta digital</a> na sua mão.</h3>               
+            <div class="col3">
+                <h2>Sobre nós</h2>
+                <p>Carreiras</p>
+                <p>Open Finance</p>
+                <p>Ética e Compliance</p>
+                <p>Política de Privacidade</p>
+                <p>Portal de Privacidade - Exerça seus Direitos</p>
+                <p>Regras e Parâmetros de Atuação</p>
+                <p>Relatório GRSAC e RTIS</p>
+                <p>Relatório GRSAC</p>
+                <p>Política PRSAC</p>
+                <p>Política PLD</p>
+                <p>AML Policy</p>
+                <p>Política de Gestão Integrada de Riscos</p>
+                <p>Política de Privacidade para Candidatos</p>
+                <p>Demonstrações Financeiras</p>
+                <p>Correspondente Bancário</p>
+                <p>Sistema de informação de crédito</p>
             </div>
-            <div class="right">
-                <div class="card-vantagem">
-                    <img src="./images/imgs-sexta-dobra/img_arvore_de_cartoes.webp" alt="simbolo-cards">
-                </div>                
+            <div class="col4">
+                <h2>Informações</h2>
+                <p>Central de Ajuda</p>
+                <p>Canais de Atendimento</p>
+                <p>Ouvidoria</p>
+                <p>Taxas e tarifas</p>
+                <p>Renegociação de dívidas</p>
+                <p>Regulamentos</p><br>
+                <h2>Explore</h2>
+                <p>Blog</p>
+                <p>Banco Original</p>
+                <p>Investidor</p>
             </div>
-        </section>
+            <div class="col5">
+                <h2>SAC</h2>
+                <p>08000 025 8000</p>
+                <p>Disponível todos os dias, 24h.</p><br><br>
 
-        <section class="content__duvidas">
-           <div class="main__duvidas">
-             <h2>Dúvidas frequentes</h2>
-           </div>
-           
-           <div class="duvidas__acordeon">
-                <div class="acordeon">
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">1. Com quantos anos posso solicitar o PicPay Card crédito?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Assim como para abertura da conta PicPay, a idade mínima necessária para obter o PicPay Card na função débito é de 16 anos. Para o PicPay Card na função crédito, é preciso ter no mínimo 18 anos e a solicitação estará sujeita à análise e aprovação de crédito.</h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">2. Como funciona o PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Todos os clientes que já <strong>possuem um PicPay Card crédito</strong> e aceitarem a nova oferta e os <strong>novos clientes</strong> que solicitarem o PicPay Card crédito agora vão ter a sua disposição o <strong>Cofrinho do Cartão</strong> - uma forma mais fácil de você ter <strong>limite no cartão de crédito</strong> e poder construir seu <strong>histórico de crédito</strong> com o PicPay, podendo ganhar <strong>Limite Extra</strong> e até mesmo um <strong>Limite Aprovado</strong>. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">3. Como funciona a composição dos meus limites no PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">No novo PicPay Card, você pode ter <strong>até três tipos de limite</strong> pra compor seu cartão de crédito, dependendo do seu nível e da saúde do seu crédito com o PicPay. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">4. Como funciona o Aumento de Limite Automático?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Esse limite está disponível para <strong>clientes em qualquer um dos níveis</strong>. O Aumento de Limite Automático funciona como um "limite emergencial" para o seu cartão de crédito. <strong>A gente explica:</strong> se você <strong>precisa de mais limite para fazer alguma compra</strong> e <strong>não tem o valor completo no Cofrinho do Cartão</strong>, pode utilizar o valor que você tem no <strong>Saldo da sua conta PicPay</strong> como limite. Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">5. Qual a bandeira do cartão de crédito do PicPay?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">A bandeira do PicPay Card é Mastercard, aceita mundialmente por uma ampla rede de estabelecimentos credenciados</h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">6. O cartão PicPay é crédito ou débito?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">O PicPay Card é um cartão múltiplo, ou seja, ele pode ser crédito e débito. Caso você tenha crédito aprovado, o seu PicPay Card terá as duas funcionalidades.</h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">7. Como solicitar ou ativar meu PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Para <strong>solicitar ou ativar</strong> o novo PicPay Card você precisa <strong>depositar um valor mínimo no Cofrinho</strong>.<br><br>
-                            No momento da <strong>ativação</strong> do PicPay Card, é <strong>necessário transferir R$ 50,00 pro Cofrinho do Cartão</strong>. Ah e relembrando: <strong>todo</strong> o dinheiro guardado nesse cofrinho <strong>rende 102% do CDI</strong> todo dia útil.<br><br> 
-                            Assim que você colocar esse valor mínimo no Cofrinho, o<strong>cartão físico será gerado</strong> e enviado para seu endereço, com prazo de até 10 dias úteis para entrega. Enquanto isso, o <strong>cartão virtual fica disponível para uso imediato.</strong></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">8. Quais as vantagens do PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Usar o PicPay Card na função crédito tem muitas vantagens:<br><br>
-                            O <strong>valor</strong> guardado no <strong>Cofrinho do Cartão</strong> vira <strong>limite</strong> pra você usar no <strong>crédito</strong>;
-                            Seu dinheiro fica <strong>rendendo 102% do CDI</strong> todo dia útil;
-                            Você começa a criar e melhorar seu <strong>histórico de crédito</strong> com a gente e pode conquistar <strong>Limite Extra</strong> ou um <strong>Limite Aprovado;</strong>
-                            Com o cartão de crédito você pode <strong>parcelar</strong> suas compras e também <strong>usar em sites e aplicativos</strong>, como: Netflix, Uber, iFood e etc.</h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">9. Como faço para ter limite no PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">10. Quando vou ter um Limite Aprovado pelo PicPay?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Quanto <strong>mais você usar</strong> seu <strong>PicPay Card na função crédito</strong>, mais vai permitir que a gente <strong>te conheça melhor</strong> para oferecer um <strong>Limite Aprovado</strong>, à medida que construímos o nosso relacionamento.Para mais informações, <a href="#" class="style-link">acesse a Central de Ajuda.</a></h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">11. Posso parcelar minhas compras no PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden"><strong>Claro!</strong> Você pode <strong>parcelar as compras - com ou sem juros</strong> - a critério do lojista.<br><br>
-                            Ao parcelar uma compra, o <strong>valor total</strong> (e não apenas o valor da parcela) fica <strong>reservado no Cofrinho do cartão</strong>, rendendo, e é liberado à medida que você vai <strong>pagando suas faturas</strong>.</h3>
-                        <hr class="linha">
-                    </div>
-                    <div class="item__acordeon">
-                        <div class="acordeon__item">
-                            <h2 class="acordeon__title">12. Como acompanhar a entrega do PicPay Card?</h2>
-                            <svg  class="acordeon__seta" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="color-icon" d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>   
-                        </div>
-                        <h3 class="acordeon__descricao hidden">Você pode acompanhar a entrega do seu PicPay Card direto no aplicativo.<br><br>
-                            1. Abra o app PicPay<br><br> 
-                            2. Toque em "Carteira"<br><br>
-                            3. Depois toque em "Acompanhe o rastreio e desbloqueie o seu cartão."<br><br>
-                            Após essas etapas, você vai poder acompanhar as informações de entrega do seu cartão. Você também receberá um e-mail com todas as atualizações. Lembre-se que a entrega do cartão tem um prazo de até 10 dias úteis.</h3>
-                        <hr class="linha">
-                    </div>
-                </div>                
-           </div>
-        </section>
+                <h2>SAC em libras</h2>
+                <p>Acesse o nosso atendimento ao SAC em libras, disponível em dias úteis das 10h às 16h.</p><br><br>
 
-        <footer>
-            <div class="footer-links">
-                <div class="col1">
-                    <h2>Pra você</h2>
-                    <p>Conta digital</p>
-                    <p>Conta para menores</p>
-                    <p>Cartão de crédito</p>
-                    <p>Pix</p>
-                    <p>Assistente de Pagamentos</p>
-                    <p>Rendimento</p>
-                    <p>Antecipação FGTS</p>
-                    <p>Empréstimo Consignado</p>
-                    <p>Crédito com garantia de veículo</p>
-                    <p>PicPay Invest</p>
-                    <p>Seguro Carteira Digital</p>
-                    <p>Seguro Celular</p>
-                    <p>PicPay Shop</p>
-                    <p>Multas e IPVA</p>
-                    <p>Seguro de Vida</p>
-                </div>
-                <div class="col2">
-                    <h2>Para seu Negócio</h2>
-                    <p>PicPay Negócios</p>
-                    <p>Venda online</p>
-                    <p>Soluções para E-commerce</p>
-                    <p>Maquininhas Parceiras</p>
-                    <p>Promoções PicPay</p>
-                    <p>PicPay Ads</p>
-                    <p>PicPay Benefícios</p>
-                    <p>Antecipação de recebíveis</p>
-                </div>
-                <div class="col3">
-                    <h2>Sobre nós</h2>
-                    <p>Carreiras</p>
-                    <p>Open Finance</p>
-                    <p>Ética e Compliance</p>
-                    <p>Política de Privacidade</p>
-                    <p>Portal de Privacidade - Exerça seus Direitos</p>
-                    <p>Regras e Parâmetros de Atuação</p>
-                    <p>Relatório GRSAC e RTIS</p>
-                    <p>Relatório GRSAC</p>
-                    <p>Política PRSAC</p>
-                    <p>Política PLD</p>
-                    <p>AML Policy</p>
-                    <p>Política de Gestão Integrada de Riscos</p>
-                    <p>Política de Privacidade para Candidatos</p>
-                    <p>Demonstrações Financeiras</p>
-                    <p>Correspondente Bancário</p>
-                    <p>Sistema de informação de crédito</p>
-                </div>
-                <div class="col4">
-                    <h2>Informações</h2>
-                    <p>Central de Ajuda</p>
-                    <p>Canais de Atendimento</p>
-                    <p>Ouvidoria</p>
-                    <p>Taxas e tarifas</p>
-                    <p>Renegociação de dívidas</p>
-                    <p>Regulamentos</p><br>
-                    <h2>Explore</h2>
-                    <p>Blog</p>
-                    <p>Banco Original</p>
-                    <p>Investidor</p>
-                </div>
-                <div class="col5">
-                    <h2>SAC</h2>
-                    <p>08000 025 8000</p>
-                    <p>Disponível todos os dias, 24h.</p><br><br>
+                <h2 style="font-size: 18px;">SAC PicPay Negócios - PJ</h2>
+                <p>4003-3163</p>
+                <p>Disponível de segunda a domingo, das 9h às 18h.</p><br><br>
 
-                    <h2>SAC em libras</h2>
-                    <p>Acesse o nosso atendimento ao SAC em libras, disponível em dias úteis das 10h às 16h.</p><br><br>
-
-                    <h2 style="font-size: 18px;">SAC PicPay Negócios - PJ</h2>
-                    <p>4003-3163</p>
-                    <p>Disponível de segunda a domingo, das 9h às 18h.</p><br><br>
-
-                    <h2>Privacidade & Proteção de Dados</h2>
-                    <p>Encarregado: Thiago Daniel</p>
-                    <p>Contado: encarregado@picpay.com</p>
-                </div>
+                <h2>Privacidade & Proteção de Dados</h2>
+                <p>Encarregado: Thiago Daniel</p>
+                <p>Contado: encarregado@picpay.com</p>
             </div>
-            <div class="footer-redes">
-                <div class="footer-redes-img">                
+        </div>
+
+        <div class="footer-redes">  
+                <div>
                     <a href="/">
                         <img class="footer__logo" src="./images/logo-footer.png" alt="logo">
                     </a>  
-                </div>    
-                <div class="footer-redes-icons">
-                    <div class="footer-icons">
+        
+                    <div class="footer-redes-icons">                    
                         <i class="bi bi-facebook"></i>        
                         <i class="bi bi-instagram"></i>        
                         <i class="bi bi-twitter"></i>        
                         <i class="bi bi-tiktok"></i>        
                         <i class="bi bi-youtube"></i>        
-                        <i class="bi bi-linkedin"></i>   
-                    </div>
-                    <div class="footer-redes-playstores">
-                        <img class="img-app img1" src="./images/img_appstore_footer.jpg" alt="logo">
-                        <img class="img-app" src="./images/img_google_play_footer.jpg" alt="logo">
-                    </div>  
-                </div>   
-            </div>
-        </footer>        
+                        <i class="bi bi-linkedin"></i>  
+                    </div>   
+                </div>                            
+
+                <div class="footer-redes-playstores">
+                    <img class="img-app" src="./images/img_appstore_footer.jpg" alt="logo">
+                    <img class="img-app" src="./images/img_google_play_footer.jpg" alt="logo">
+                </div>
+            </div>  
+        </div>
         <div class="footer-copy">
             <p>© 2025 PicPay Instituição de Pagamento S/A. CNPJ: 07.138.049/0001-54</p>
             <p>R. Porto União, 295 - Brooklin, São Paulo - SP, 04568-020</p>
         </div>
-    </main>
+    </footer>        
 
 </body>
 </html>

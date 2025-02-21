@@ -22,33 +22,7 @@
     cursor: pointer;           
 }
 
-.btn-card-form-sem-bg{
-    background-color: transparent;
-    border: 2px solid var(--verde-principal);
-    width: 22%;
-    padding: .8rem 2.5rem;
-    border-radius: .5rem;
-    margin-top: 1.5rem;
-    color: var(--verde-principal);
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;     
-}
-
-.btn-card-form{
-    width: 22%;
-    padding: .8rem 2.5rem;
-    border-radius: .5rem;
-    margin-top: 1.5rem;
-    border: 0;
-    background-color: var(--verde-principal);
-    color: var(--white);
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;         
-}
-
-.btn-form:hover, .btn-card-form:hover{
+.btn-form:hover{
     background-color:#32A17A;
 }
 
@@ -86,200 +60,283 @@
     text-decoration: underline;
 }
 
-.flex{
-    display: flex;
-    background-color: rgb(196, 209, 16);
-}
-
 .interface{
-    width: 100%;
-    background-color: red;
+    width: 1360px;
+    height: 1000px;    
+    /* background-color: red; */
 }
 
 /* Gerais */
 
 /* Primeira dobra Cartões de crédito com benefícios exclusivos. Com PicPay, a experiência é outra */
 
-.content_topo{
-    /* background-color: var(--white);    */
-    padding: 40px 4%; 
-}
 
-.content_topo .flex{
-    align-items: center;
-    justify-content: center;
-}
-
-.img__hero{
-    width: 930px;
-    height: 50%x;
-}
-
-
-
-/* .content_topo .hero {
-    background-color: #3232a1;
+/* Hero formulario de cadastro e imagem */
+.hero{
     width: 100%;
+    height: 80vh;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #238662;
 }
 
-.content_topo .hero__textos {
+.image-hero{
     width: 50%;
-    padding: 8.8rem 3rem;
+    height: 80vh;
+    background-image: url("../images/image_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.textos{    
+    width: 50%;
+    padding: 0 3rem;
     background-color: var(--verde-principal);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     font-weight: 600;
-    color: var(--white);
-    gap: 2rem;
+    color:#000;
+    gap: 2rem;  
+}
 
-    h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-        margin: 2rem 0 1rem 0;
-    }
+.area-form {
+    width: 45%;
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
 
-    .area-form {
-        width: 68%;
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        background-color: var(--white);
-        border-radius: 1rem;
-
-        h2 {
-            color: var(--black);
-            margin-bottom: 1rem;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        form input {
-            width: 100%;
-            height: 45px;
-            padding: 10px;
-            border-radius: .5rem;
-            outline: none;
-            border: 1px solid var(--gray);
-            margin-bottom: 1rem;
-        }
-
-        .placeholder-grayDark::placeholder {
-            color: #ababab;
-        }
-
-        .placeholder-gray::placeholder {
-            color: var(--gray);
-        }
-        
-        ::-webkit-input-placeholder {
-            color: #3f3f3f;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
-        input:-moz-placeholder {
-            color: #3f3f3f;
-            font-size: 1rem;
-            font-weight: 500;
-        }
+    h2 {
+        color: #000;
+        margin-bottom: 1rem;
     }
 }
 
+input{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+        
+    .placeholder-grayDark::placeholder {
+        color: #ababab;
+    }
+
+    .placeholder-gray::placeholder {
+        color: var(--gray);
+    }
+    
+    ::-webkit-input-placeholder {
+        color: #3f3f3f;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    input:-moz-placeholder {
+        color: #3f3f3f;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.title-hero{
+    color: white;
+    font-size: 3rem;
+}
+
+.btn-form{
+    width: 75%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+    cursor: pointer;  
+    background: #238662;   
+    color: #fff;  
+    font-size: 1rem;
+}
+/* Hero formulario de cadastro e imagem */
 
 /* Primeira dobra */
 
-/* Segunda dobra Para cada estilo de vida, um tipo de cartão personalizado */
+/* Segunda dobra Para cada estilo de vida, um cartão personalizado */
 .content__cards{
     width: 100%;
-    height: auto;    
+    /* height: auto;     */
+    height: 1050px;    
     padding: 2.8rem; 
     display: flex;
-    align-items: left;
+    /* align-items: left; */
     flex-direction: column;
-    justify-content: center;
-}
-
-.content__cards h2{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;   
+    /* justify-content: center; */
+    /* background-color: red; */
 }
 
 .content__cards .title{
     align-items: left;
-    margin-left: .38rem;
-}
-
-.content__cards__textos h2{
     font-size: 2.5rem;
 }
 
-.content__cards .cards{
+.content__cards .area-cards{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 52rem;
+    display: flex;    
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: .8rem 0;
     flex-wrap: wrap;
     gap: .8rem;
-    padding: .2rem;
+    /* background-color: rgb(53, 179, 233); */
 }
 
-.content__cards .cards .card1{
-    width: 32%; 
-    height: 600px;
-    padding-bottom: -5rem;
-    border-radius: .7rem;
-    background: rgb(239,239,239);
-    background:linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
-    background-image: url('../images/cards-segunda-dobra/card1.webp');
-    background: cover;
-    /* Cobre toda a div */
+.content__cards .area-cards .card1 {
+    width: 30%; 
+    height: 48rem;   
+    border-radius: 10px;
+    border: 1px solid #f6f6f6e7;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(116, 116, 116) 100%);
     background-position: center;
-    /* Centraliza a imagem */
     background-repeat: no-repeat;
-    /* Evita repetições */
-    background-size: 115%;    
+    background-size: cover;
 }
 
-.content__cards .cards .card2{
-    width: 32%; 
-    height: 600px;
-    padding-bottom: -5rem;
-    border-radius: .7rem;
-    background: rgb(239,239,239);
-    background:linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
-    background-image: url('../images/cards-segunda-dobra/card2.webp');
-    background: cover;
-    /* Cobre toda a div */
-    background-position: center;
-    /* Centraliza a imagem */
-    background-repeat: no-repeat;
-    /* Evita repetições */
-    background-size: 115%;    
-}
-
-.content__cards .cards .card3{
-    width: 32%; 
-    height: 600px;
-    padding-bottom: -5rem;
-    border-radius: .7rem;
-    background: rgb(239,239,239);
-    background:linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
+.content__cards .area-cards .card1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
     background-image: url('../images/cards-segunda-dobra/card3.webp');
-    background: cover;
-    /* Cobre toda a div */
     background-position: center;
-    /* Centraliza a imagem */
     background-repeat: no-repeat;
-    /* Evita repetições */
-    background-size: 115%;    
+    border-radius: 10px; /* Arredonda a pseudo-elemento também */
 }
+
+.content__cards .area-cards .card2 {
+    width: 30%; 
+    height: 48rem;   
+    border-radius: 10px;
+    border: 1px solid #f6f6f6e7;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(116, 116, 116) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content__cards .area-cards .card2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
+    background-image: url('../images/cards-segunda-dobra/card2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Arredonda a pseudo-elemento também */
+}
+
+.content__cards .area-cards .card3 {
+    width: 30%; 
+    height: 48rem;   
+    border-radius: 10px;
+    border: 1px solid #f6f6f6e7;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(116, 116, 116) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content__cards .area-cards .card3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
+    background-image: url('../images/cards-segunda-dobra/card1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Arredonda a pseudo-elemento também */
+}
+
+ .are__btn__card{
+    width: 100%;
+    height: 5.5rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #161616;
+ }
+
+ .btn-card-form-sem-bg:hover{
+    background-color: #17bc8520;
+}
+
+.btn-card-form-sem-bg{
+    background-color: transparent;
+    border: 2px solid var(--verde-principal);
+    width: 22%;
+    padding: .8rem 2.5rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+    color: var(--verde-principal);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;     
+}
+
+.btn-card-form{
+    width: 85%;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .8rem 2.5rem;
+    border-radius: .5rem;    
+    border: 0;
+    background-color: var(--white);
+    color: var(--verde-principal);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;       
+    margin-bottom: 1rem;   
+}
+
+.saiba-mais{
+    color: #FFF;
+    text-decoration: underline;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    font-weight: 700;
+}
+
+.bi-arrow-right-short{
+    color: #FFF;
+}
+
 /* Segunda dobra */
 
 /* Terceira dobra PicPay Card: um cartão de crédito que todo mundo pode ter */
@@ -336,10 +393,6 @@
     margin-top: 70px;
     font-weight: 400;
     background-color:#fff;
-}
-
-.btn-card-form-sem-bg:hover{
-    background-color: #17bc8520;
 }
 /*  Terceira dobra PicPay Card */
 
@@ -505,6 +558,16 @@
     margin-bottom: 4rem;
 }
 
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+
 .main__duvidas{
     display: flex;
     align-items: center;
@@ -569,101 +632,3 @@
  }
 
 /* Setima dobra Dúvidas Frequentes */
-
-/* Footer */
-footer{
-    width: 100%;
-    height: 1200px;
-    padding: 6.4rem;
-    background-color:var(--black);
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-}
-
-.footer-icons{
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-links{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
-
-footer .footer-links h2{
-    color: var(--white);
-    font-size: 1.3rem;
-}
-
-footer .footer-links p{
-    color: var(--white);
-    margin-top: 1rem;
-}
-
-.footer__logo{
-    width: 150px;
-}
-
-.footer-icons{
-    margin-left: 20px;
-    position: absolute;
-    top: .5rem;
-}
-
-.footer-redes{
-    width: 100%;
-    height: 50px;
-    margin-top: 9.7rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.footer-redes-icons{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-i{
-   color: var(--redes-sociais);
-   font-size: 1.5rem; 
-   margin-left: 1rem;
-   cursor: pointer;   
-}
-
-.img-app{
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.img1{
-    margin-right: 15px;
-}
-
-.footer-redes-playstores{
-    position: absolute;
-    right: 0;
-    top: -15px;
-}
-
-.footer-copy{
-    width: 100%;
-    padding: 2.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--bg-footer);
-}
-
-.footer-copy p{
-    font-size: 1rem;
-    color: var(--white);
-    align-items: center;
-}
-
-/* Footer */
