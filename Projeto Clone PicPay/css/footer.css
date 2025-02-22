@@ -1,13 +1,8 @@
 /* Footer */
 footer{
     width: 100%;
-    min-height: 750px;
-    /* background-color:var(--black); */
-    background-color: green;
-    /* margin-top: 5.3rem;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    position: relative; */
+    min-height: 850px;
+    background-color:var(--black);
 }
 
 .footer-links{
@@ -33,13 +28,14 @@ footer .footer-links p{
 }
 
 .footer-redes{
-    min-width: 1360px;
+    width: 1360px;
     height: 100px;
     margin: 0 auto;
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6rem; */
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .footer-redes-icons{
@@ -67,8 +63,7 @@ i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: var(--bg-footer); */
-    background-color: red;
+    background-color: var(--bg-footer);
 }
 
 .footer-copy p{
