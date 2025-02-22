@@ -19,7 +19,8 @@
     <!-- icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <script src="./js/script.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/animations.js" defer></script>
     <title>Clone | PicPay Cartões</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
             <a href="/">
                 <img src="./images/logo.jpg" alt="logo">
             </a>                                 
-        </div>
+        </div><!--areaLogo-->
 
         <nav class="nav-list">
             <ul>
@@ -60,7 +61,7 @@
                     <a href="#">Blog</a>
                 </li>
             </ul>    
-        </nav>
+        </nav><!--nav-list-->
 
         <!-- <i class="bi bi-x-lg imgOpen"></i>
         <i class="bi bi-list imgClose"></i>
@@ -107,7 +108,7 @@
             <button class="botaoHeader">
                 Pedir cartão
             </button>
-        </div>
+        </div><!--area-right-->
     </header>
 
     <main>
@@ -123,43 +124,44 @@
                         </div>
                 </div>
                 <div class="image-hero"></div>
-        </section>
+        </section> <!--hero-->
 
-        <div class="interface">
-            <section class="content__cards">
+        <section class="interface">
+            <div class="content__cards hidden">
                 <h2 class="title">Para cada estilo de vida, um cartão personalizado</h2>
                 <div class="area-cards">
-                    <div class="card1">
-                        <div class="are__btn__card">
+                    <div class="card1 hidden">
+                        <div class="are__btn__card ">
                             <button class="btn-card-form">Pedir cartão de crédito</button>
                             <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
 
-                    <div class="card2">
-                        <div class="are__btn__card">
+                    <div class="card2 hidden">
+                        <div class="are__btn__card ">
                             <button class="btn-card-form">Pedir cartão de crédito</button>
                             <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
 
-                    <div class="card3">
-                        <div class="are__btn__card">
+                    <div class="card3 hidden">
+                        <div class="are__btn__card ">
                             <button class="btn-card-form">Pedir cartão de crédito</button>
                             <a href="#" class="saiba-mais">Saiba mais<i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>            
-            </section><!--content__cards-->
+            </div><!--content__cards-->
  
-            <section class="content__cards_info">            
+            <div class="content__cards_info ">            
                 <div class="content__cards__textos">
                     <h2 class="title">PicPay Card: um cartão de crédito que<br> todo mundo pode ter</h2>
                     <h3 class="subtitle">Sem burocracia e zero anuidade, o PicPay Card te deixa no controle do seu dinheiro.</h3>
                 </div>   
 
-                <div class="area__cards__info">
-                    <div class="card__info">
+                <div class="area__cards__info hidden">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo1.webp" alt="simbolo1">
                         </div>
@@ -167,7 +169,8 @@
                             <h3 class="card__info__texto">Cartão de crédito zero anuidade*.</h3>
                         </div>
                     </div> 
-                    <div class="card__info">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo2.webp" alt="simbolo1">
                         </div>
@@ -175,7 +178,8 @@
                             <h3 class="card__info__texto">Compre com cartão virtual em lojas online e apps.</h3>
                         </div>
                     </div> 
-                    <div class="card__info">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo3.webp" alt="simbolo1">
                         </div>
@@ -183,7 +187,8 @@
                             <h3 class="card__info__texto">Cadastre seu cartão nas carteiras digitais e pague pelo celular.</h3>
                         </div>
                     </div> 
-                    <div class="card__info">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo4.webp" alt="simbolo1">
                         </div>
@@ -191,7 +196,8 @@
                             <h3 class="card__info__texto">Aproveite as vantagens da bandeira Mastercard.</h3>
                         </div>
                     </div> 
-                    <div class="card__info">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo5.webp" alt="simbolo1">
                         </div>
@@ -199,7 +205,8 @@
                             <h3 class="card__info__texto">Acompanhe todas as movimentações no app PicPay.</h3>
                         </div>
                     </div> 
-                    <div class="card__info">
+
+                    <div class="card__info hidden">
                         <div class="area-img">
                             <img class="icone" src="./images/simbolos-terceira-dobra/simbolo6.webp" alt="simbolo1">
                         </div>
@@ -212,9 +219,9 @@
                 <div class="content__card__info_area_button">
                     <button class="btn-card-form-sem-bg">Pedir cartão de crédito</button>
                 </div>
-            </section><!--content__cards__info-->
+            </div><!--content__cards__info-->
 
-            <section class="content__tipos_limite">
+            <div class="content__tipos_limite hidden">
                 <div class="left">
                     <h2 class="card_title">Conheça todos os tipos de limite que você pode ter com o PicPay Card</h2>
                     <h3 class="card-subtitle">Do Cofrinho do Cartão pra você construir seu histórico de crédito<br> com a gente até Limite Aprovado pra você aumentar seu poder de compra.</h3>
@@ -241,26 +248,26 @@
                         <p class="tipo-limite-subtitle">Multiplique seu limite a cada depósito. Além do Cofrinho do Cartão, você tem a possibilidade de aumentar ainda mais o seu limite, ganhando um Limite Extra. Ele varia de acordo com o valor que você tem guardado no Cofrinho do Cartão e também com o seu histórico de crédito com o PicPay. Esse Limite Extra pode ser de 50, 100 e até 250% em cima do valor que você tem guardado.</p>
                     </div>
                 </div>
-            </section><!--content__tipos_limite-->
+            </div><!--content__tipos_limite-->
  
-            <section class="content__beneficios">
+            <div class="content__beneficios hidden">
                 <div class="content__titles">
                     <div class="area__beneficios__title">
                         <h2 class="title title-beneficios">Benefícios Mastercard® Surpreenda</h2>
                     </div>                
                 </div>
-                <div class="content__images">
-                    <div class="img-left">
+                <div class="content__images hidden">
+                    <div class="img-left image hidden">
                         <img src="./images/imgs-quinta-dobra/img_beneficios1.jpg" class="imgBeneficios"  alt="simbolo-cards">
                     </div>
-                    <div class="img-right">
+                    <div class="img-right image hidden">
                         <img src="./images/imgs-quinta-dobra/img_beneficios2.jpg" class="imgBeneficios" alt="simbolo-cards">
                     </div>
                 </div>
 
-            </section><!--content__beneficios-->
+            </div><!--content__beneficios-->
 
-            <section class="content__vantagens">
+            <div class="content__vantagens hidden">
                 <div class="left">
                     <h2 class="card_title">Ainda mais vantagens com a conta digital PicPay</h2>
                     <h3 class="card-subtitle">O PicPay Card é débito e crédito e você controla todas as suas contas e compras pelo app PicPay. Você não se preocupa com a anuidade e ainda tem todas as <a href="#">funcionalidades da conta digital</a> na sua mão.</h3>               
@@ -270,9 +277,9 @@
                         <img src="./images/imgs-sexta-dobra/img_arvore_de_cartoes.webp" alt="simbolo-cards">
                     </div>                
                 </div>
-            </section><!--content__vantagens-->
+            </div><!--content__vantagens-->
 
-            <section class="content__duvidas">
+            <div class="content__duvidas hidden">
                 <div class="main__duvidas">
                     <h2 class="title title-duvidas">Dúvidas frequentes</h2>
                 </div>
@@ -412,10 +419,8 @@
                             </div>
                         </div>                
                 </div>
-            </section><!--content__duvidas-->
-
-        </div> <!--interface-->  
-        
+            </div><!--content__duvidas-->
+        </section> <!--interface-->          
     </main>
 
     <footer>

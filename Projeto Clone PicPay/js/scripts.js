@@ -47,17 +47,17 @@ acordeon.forEach(item => {
 });
 
 // Altenando entre o menu hamburger e o X de fechar
-document.addEventListener("DOMContentLoaded", () => {
-    let imgOpen  = document.querySelector('.imgOpen');
-    let imgClose = document.querySelector('.imgClose');
+// document.addEventListener("DOMContentLoaded", () => {
+//     let imgOpen  = document.querySelector('.imgOpen');
+//     let imgClose = document.querySelector('.imgClose');
 
-    imgOpen.addEventListener('click', () => {
-        imgOpen.style.display  = 'none';
-        imgClose.style.display = 'block';
-    });
+//     imgOpen.addEventListener('click', () => {
+//         imgOpen.style.display  = 'none';
+//         imgClose.style.display = 'block';
+//     });
 
-    imgClose.addEventListener('click', () => {
-        imgClose.style.display = 'none';
-        imgOpen.style.display  = 'block';
-    });
-});
+//     imgClose.addEventListener('click', () => {
+//         imgClose.style.display = 'none';
+//         imgOpen.style.display  = 'block';
+//     });
+// });

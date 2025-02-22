@@ -92,6 +92,7 @@ main{
     align-items: center;
     justify-content: space-between;
     background-color: #238662;
+    margin-bottom: 4.5rem;
 }
 
 .image-hero{
@@ -608,3 +609,54 @@ form{
  }
 
 /* Setima dobra Dúvidas Frequentes */
+
+/* Animações */
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
+}
+
+/* Animação primeira dobra */
+.area-cards :nth-child(2){
+    transition-delay: 400ms;
+}
+
+.area-cards :nth-child(3){
+    transition-delay: 1000ms;
+}
+/* Animação primeira dobra */
+
+/* Animação segunda dobra */
+.card__info :nth-child(2){
+    transition-delay: 400ms;
+}
+.card__info :nth-child(3){
+    transition-delay: 1000ms;
+}
+.card__info :nth-child(4){
+    transition-delay: 1900ms;
+}
+.card__info :nth-child(5){
+    transition-delay: 2300ms;
+}
+.card__info :nth-child(6){
+    transition-delay: 2600ms;
+}
+/* Animação segunda dobra */
+
+/* Animação quinta dobra */
+.image :nth-child(2){
+    transition-delay: 200ms;
+}
+/* Animação quinta dobra */
+
+/* Animações */
