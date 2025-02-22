@@ -655,7 +655,7 @@ form{
 
 /* Animação quinta dobra */
 .image :nth-child(2){
-    transition-delay: 100ms;
+    transition-delay: 400ms;
 }
 /* Animação quinta dobra */
 
