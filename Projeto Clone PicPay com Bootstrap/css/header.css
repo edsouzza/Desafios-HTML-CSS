@@ -31,11 +31,6 @@ a{
     color: var(--verde-principal);
 }
 
-.navbar-nav{
-    /* background-color: red; */
-    padding: 1rem 0;    
-}
-
 #navbarNav{
     margin-left: 20rem;
 }
@@ -49,4 +44,12 @@ a{
     font-weight: bold;
     font-size: large;
     margin-top: .3rem;
+}
+
+.nav-item{
+    padding: 1rem 0;    
+    cursor: pointer;
+}
+.nav-item:hover{
+      border-bottom: 2px solid var(--verde-principal);   
 }
