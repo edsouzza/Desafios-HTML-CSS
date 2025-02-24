@@ -1,0 +1,52 @@
+i{
+    /* seta */
+    position: absolute;
+    top: 1.6rem;
+    font-style: bold;    
+}
+
+a{
+    color: var(--link-gray);
+    font-weight: 900; 
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.sublinhado:hover{
+   background-color: var(--hover-button);
+   border-radius: 7px;
+   padding: .6rem 1.2rem;
+}
+
+.buttonHead{
+    width: 150px; 
+    height: 45px;
+    border: 2px solid var(--verde-principal);
+}
+
+.buttonHead:hover{
+    background-color: var(--hover-button);
+    color: var(--verde-principal);
+}
+
+.navbar-nav{
+    /* background-color: red; */
+    padding: 1rem 0;    
+}
+
+#navbarNav{
+    margin-left: 20rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    color: --var(--link-gray);
+}
+
+.icon{
+    font-weight: bold;
+    font-size: large;
+    margin-top: .3rem;
+}

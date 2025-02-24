@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --verde-principal   : #238662;
+    --verde-claro       : #56d7a7;
+    --verde-link        : #073c29;
+    --verde-bglink      : #E9F3EF;
+    --bg-footer         : #121212;
+    --bg-buttons        : #1D1D1B;
+    --bg-footer-copy    : #252525;
+    --white             : #FFFFFF;
+    --black             : #000000;
+    --gray              : #686868;
+    --link-gray         : #333333;
+    --gray-claro        : #f1f1f1;
+    --bg-tipos-limite   : #E9F3EF;
+    --redes-sociais     : #238662;
+    --hover-button      : #358f6716;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;    
+}
+
+body{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;    
+}
