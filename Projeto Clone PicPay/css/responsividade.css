@@ -22,7 +22,7 @@
             flex-direction: column;
         }
 
-        .link{
+        .link-header{
             color: var(--white);
             font-size: 1.5rem;
             margin-left: 1.5rem;
@@ -36,7 +36,38 @@
             color: var(--white);
             font-size: 1.5rem;
         }
-   } 
-   
+   }     
 }
-    
+
+
+@media (max-width:1040px) {
+   /* hero */
+   .hero{
+      flex-direction: column-reverse;      
+   }
+
+   .image-hero{     
+      background-position: 0 1px;      
+   }
+
+   .textos, .image-hero{
+      width: 100%;
+   }
+   .title-hero{
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 10px 12px;
+      color: var(--white);
+   }
+   .btn-textos{
+      text-align: center;
+   }
+   .textos{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+   }
+   /* end / hero */
+  
+}

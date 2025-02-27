@@ -1,17 +1,6 @@
-let input      = document.querySelector('#campoCPF')
 let link       = document.querySelector('.link')
 let items      = document.querySelectorAll('.item')
 let acordeon   = document.querySelectorAll('.acordeon__item')
-
-//Mudando a cor do placeholder qdo o campo receber o foco
-input.addEventListener('focus', function (){
-    input.setAttribute('class', 'placeholder-grayDark');
-})
-
-//Mudando a cor do placeholder qdo o campo perder o foco
-input.addEventListener('blur', function (){
-    input.setAttribute('class', 'placeholder-gray');
-})
 
 //Mudando a cor do link qdo passar o mouse sobre a li e voltando a cor inicial qdo li perder o foco
 items.forEach(item => {
