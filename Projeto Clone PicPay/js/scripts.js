@@ -3,17 +3,17 @@ let link       = document.querySelector('.link')
 let items      = document.querySelectorAll('.item')
 let acordeon   = document.querySelectorAll('.acordeon__item')
 
-//Mudando a cor do placeholder qdo o campor receber o foco
+//Mudando a cor do placeholder qdo o campo receber o foco
 input.addEventListener('focus', function (){
     input.setAttribute('class', 'placeholder-grayDark');
 })
 
-//Mudando a cor do placeholder qdo o campor perder o foco
+//Mudando a cor do placeholder qdo o campo perder o foco
 input.addEventListener('blur', function (){
     input.setAttribute('class', 'placeholder-gray');
 })
 
-//Mudando a cor do linki qdo passar o mouse sobre a li e voltando a cor inicial qdo li perder o foco
+//Mudando a cor do link qdo passar o mouse sobre a li e voltando a cor inicial qdo li perder o foco
 items.forEach(item => {
     item.addEventListener('mousemove', function () {
         let link = item.querySelector('.link'); // Pega SOMENTE o link dentro do item
@@ -46,6 +46,7 @@ acordeon.forEach(item => {
     });
 });
 
+//Controlando o menu mobile
 const menuIcon = document.querySelector('.menu-icon')
 const menuList = document.querySelector('.nav-list')
 const imgMenu  = document.querySelector('.menu-icon img')
