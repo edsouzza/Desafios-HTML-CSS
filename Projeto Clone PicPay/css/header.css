@@ -9,7 +9,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--gray-claro);
+    border-bottom: 1px solid #dcdcdcc9;
     z-index: 9999;
 }
 
@@ -26,8 +26,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    
+    gap: 1rem;    
 }
 
 .nav-list ul{

@@ -47,9 +47,9 @@ acordeon.forEach(item => {
 });
 
 //Controlando o menu mobile
-const menuIcon = document.querySelector('.menu-icon')
-const menuList = document.querySelector('.nav-list')
-const imgMenu  = document.querySelector('.menu-icon img')
+const menuIcon   = document.querySelector('.menu-icon')
+const menuList   = document.querySelector('.nav-list')
+const imgMenu    = document.querySelector('.menu-icon img')
 
 menuIcon.addEventListener('click',() =>{
     if(menuList.classList.contains('ativo')){
