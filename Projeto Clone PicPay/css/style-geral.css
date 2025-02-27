@@ -28,4 +28,5 @@
 body{
     font-family: "Inter", serif;
     font-style: normal;
+    overflow-x: hidden;
 }

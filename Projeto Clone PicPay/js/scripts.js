@@ -46,18 +46,16 @@ acordeon.forEach(item => {
     });
 });
 
-// Altenando entre o menu hamburger e o X de fechar
-// document.addEventListener("DOMContentLoaded", () => {
-//     let imgOpen  = document.querySelector('.imgOpen');
-//     let imgClose = document.querySelector('.imgClose');
+const menuIcon = document.querySelector('.menu-icon')
+const menuList = document.querySelector('.nav-list')
+const imgMenu  = document.querySelector('.menu-icon img')
 
-//     imgOpen.addEventListener('click', () => {
-//         imgOpen.style.display  = 'none';
-//         imgClose.style.display = 'block';
-//     });
-
-//     imgClose.addEventListener('click', () => {
-//         imgClose.style.display = 'none';
-//         imgOpen.style.display  = 'block';
-//     });
-// });
+menuIcon.addEventListener('click',() =>{
+    if(menuList.classList.contains('ativo')){
+        menuList.classList.remove('ativo')
+        imgMenu.src = './images/menu/menu.png'
+    }else{
+        menuList.classList.add('ativo')
+        imgMenu.src = './images/menu/close.png'
+    }   
+})
