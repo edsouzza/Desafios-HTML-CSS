@@ -1,3 +1,18 @@
+/* geral */
+main{   
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/* .interface{
+    width: 1360px;
+    height: auto;    
+    background-color: aqua;
+} */
+/* fim geral */
+
 /* header */
 header{
     display: flex;
@@ -58,14 +73,11 @@ header{
 .menu-icon{
     z-index: 999;
 }
+
+
 /* fim header */
 
 /* hero */
-main{   
-  display: flex;
-  height: auto;
-}
-
 .hero{
     width: 100%;
     height: 80vh;
@@ -74,7 +86,6 @@ main{
     justify-content: space-between;
     flex-direction: column-reverse;
     background-color: #238662;
-    margin-bottom: 4.5rem;
 }
 
 .image-hero{
@@ -116,3 +127,77 @@ main{
     text-align: center;
 }
 /* fim hero */
+
+/* <!-- content__cards --> */
+.content__cards{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    padding: 3rem;
+    background: #efefef;
+    /* opacity: .9; */
+    /* background: red; */
+}
+
+.content__cards .title{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.card{
+    padding: 2rem;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 10px;
+}
+
+.card img{
+    width: 300px;
+    height:500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;     
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.are__btn__card{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-card-form{
+    width: 100%;      
+    padding: .8rem 2.5rem;
+    border-radius: .5rem;    
+    border: 0;
+    background-color: var(--white);
+    color: var(--verde-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;       
+    margin-top: 1rem;
+}
+
+.saiba-mais{
+    color: #FFF;
+    text-decoration: underline;    
+    margin-top: .7rem;
+    font-weight: 700;
+}
+
+
+
+/* fim <!-- content__cards --> */

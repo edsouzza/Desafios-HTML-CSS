@@ -27,9 +27,6 @@
 }
 
 body{
-    font-family: "Inter", serif;    
-}
-
-main{
-    overflow: hidden;
+    font-family: "Inter", serif;  
+    overflow-x: hidden;  
 }
