@@ -6,17 +6,17 @@
       display: none;
    }
    .nav-list{
-        justify-content: center;
-        gap: 2rem;
-        padding: .1rem 0;
-        position: fixed;
-        background: var(--verde-principal);
         width: 100vw;
-        top: 0;
         height: 100vh;
-        left: 100%;
-        transition: 0.8s;
         display: flex;        
+        justify-content: center;
+        position: fixed;
+        gap: 2rem;
+        top: 0;
+        left: 100%;
+        padding: .1rem 0;
+        background: var(--verde-principal);
+        transition: 0.8s;
 
         ul{
             flex-direction: column;
